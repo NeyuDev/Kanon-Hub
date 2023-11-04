@@ -6,7 +6,7 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 OrionLib:MakeNotification({
-    Name = "Kanon Hub",
+    Name = "Kanon Hub (Free)",
     Content = "Đây chỉ là bản thử nghiệm, thêm chức năng lấy key sau",
     Image = "rbxassetid://4483345998",
     Time = 10
@@ -22,7 +22,7 @@ Tab:AddButton({
 Tab:AddDropdown({
     Name = "Social",
     Default = "1",
-    Options = {".gg/7nQHQDEj", "2"},
+    Options = {".gg/bQrpqJhhWJ"},
     Callback = function(Value)
         print(Value)
     end    
