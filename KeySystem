@@ -1,4 +1,4 @@
-
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/KanonHub'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "KEY SYSTEM",
@@ -25,5 +25,3 @@ local Window = Rayfield:CreateWindow({
       Key = {"https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/keylist"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/KanonHub"))()
