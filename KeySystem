@@ -125,7 +125,7 @@ OrionLib:MakeNotification({
 })
 
  
-_G.Key = game:HttpGet('https://[Log in to view URL]')
+_G.Key = game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/keylist')
 _G.KeyInput = "string"
 
 function MakeScriptHub()
