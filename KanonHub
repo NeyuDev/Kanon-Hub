@@ -19,10 +19,10 @@ Tab:AddButton({
       end    
 })
 Tab:AddButton({
-    Name = "Inf ",
+    Name = "Inf Jump",
     Callback = function()
               print("button pressed")
-            loadstring(game:GetHttp("https://pastebin.com/raw/GVcPMnQX"))()
+            loadstring(game:GetHttp("https://github.com/RobloxLuaScript/InfJump-Roblox/blob/main/bob.txt"))()
       end    
 })
 
