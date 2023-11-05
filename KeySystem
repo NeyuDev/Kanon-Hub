@@ -85,7 +85,7 @@ function readKey()
         end
 end
 
-    if isfile("/keylist.txt")
+    if file.exists("/keylist.txt") then
         readKey()
     
     else
