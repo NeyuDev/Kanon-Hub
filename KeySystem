@@ -2,43 +2,22 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 
 function createKeyPanel()
     local Window = Rayfield:CreateWindow({
-        Name = "Key",
-        Title = "Enter Key",
-        Subtitle = "For Kanon Hub",
+        Name = "Kanon Hub Key",
+        Title = "Enter Your Key",
+        Subtitle = "To unlock the Kanon Hub",
     })
 
     local Tab = Window:CreateTab("Key", 4483362458)
     local Input = Tab:CreateInput({
         Name = "Key:",
-        SetPlaceholder("Enter Key"),
-        SetRequired(true),
-    })
-
-    local Button = Tab:CreateButton({
-        Name = "Create Key",
-        Callback = function()
-            local key = createKey()
-            Input:SetValue(key)
-        end,
-    })
-
-    local Button = Tab:CreateButton({
-        Name = "Save Key",
-        Callback = function()
-            if Input:GetValue() ~= nil then
-                saveKey(Input:GetValue())
-            else
-                print("Key is required!")
-            end
-        end,
+        PlaceholderText = "Enter Key",
     })
 
     local Button = Tab:CreateButton({
         Name = "Check Key",
         Callback = function()
-            local loadedKey = loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/keylist'))()
             if Input:GetValue() == loadedKey then
-                Window:Destroy()
+                Rayfield:Destroy()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/your/script/main/script.lua"))()
             else
                 print("Invalid key!")
