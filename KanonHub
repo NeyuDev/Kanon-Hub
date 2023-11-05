@@ -22,7 +22,7 @@ Tab:AddButton({
     Name = "Inf Jump",
     Callback = function()
               print("button pressed")
-            loadstring(game:GetHttp("https://raw.githubusercontent.com/NeyuDev/feature-script/main/infjump.lua?token=GHSAT0AAAAAACIQESKBVUU53FSRXTUSSAMKZKHTK2Q"))()
+            loadstring(game:GetHttp("https://raw.githubusercontent.com/NeyuDev/feature-script/main/infjump.lua"))()
       end    
 })
 
