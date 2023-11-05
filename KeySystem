@@ -1,13 +1,31 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 function createKeyPanel()
     local Window = Rayfield:CreateWindow({
-        Name = "Kanon Hub Key",
-        Title = "Enter Your Key",
-        Subtitle = "To unlock the Kanon Hub",
-    })
-
-    local Tab = Window:CreateTab("Key", 4483362458)
+   Name = "Kanon Hub Key",
+   LoadingTitle = "Kanon Hub Key",
+   LoadingSubtitle = "by UniNeyu",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Kanon Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Kanon Hub",
+      Subtitle = "Kanon Hub Key System",
+      Note = "Don't have a key? Please join discord and buy it!",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/keylist"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
     local Input = Tab:CreateInput({
         Name = "Key:",
         PlaceholderText = "Enter Key",
