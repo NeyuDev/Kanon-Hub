@@ -20,7 +20,20 @@ function createKeyPanel()
                 Rayfield:Destroy()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/your/script/main/script.lua"))()
             else
-                print("Invalid key!")
+                Rayfield:Notify({
+   Title = "Notification Title",
+   Content = "Invalid key!",
+   Duration = 7,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
             end
         end,
     })
