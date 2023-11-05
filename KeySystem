@@ -35,7 +35,7 @@ function LoadMain()
 end
 
 function readKey()
-    if readfile("/keylist.txt") == loadedKey then
+    if file.exists("/keylist.txt") then
 			LoadMain()
         else
             local Window = Rayfield:CreateWindow({
@@ -85,15 +85,9 @@ function readKey()
         end
 end
 
-    if file.exists("/keylist.txt") then
-        readKey()
-    
-    else
-        makefile("/keylist.txt")
-        readKey()
-    end
+if isfile("/keylist.txt") then
+    readKey()
 else
     makefolder("kanonhub")
-    makefile("/keylist.txt")
     readKey()
 end
