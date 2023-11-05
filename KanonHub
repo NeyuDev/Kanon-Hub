@@ -12,10 +12,17 @@ OrionLib:MakeNotification({
     Time = 10
 })
 Tab:AddButton({
-    Name = "Auto Chặn Bóng",
+    Name = "Auto Parry",
     Callback = function()
               print("button pressed")
             loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-op-autoparry-with-visualizer-8652"))()
+      end    
+})
+Tab:AddButton({
+    Name = "Inf ",
+    Callback = function()
+              print("button pressed")
+            loadstring(game:GetHttp("https://pastebin.com/raw/GVcPMnQX"))()
       end    
 })
 
