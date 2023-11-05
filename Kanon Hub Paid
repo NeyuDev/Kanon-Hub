@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/OrionLib')))()
-local Window = OrionLib:MakeWindow({Name = "Kanon Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Kanon Hub (Free)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "BladeBall",
     Icon = "rbxassetid://4483345998",
@@ -7,7 +7,7 @@ local Tab = Window:MakeTab({
 })
 OrionLib:MakeNotification({
     Name = "Kanon Hub (Free)",
-    Content = "Đây chỉ là bản thử nghiệm, thêm chức năng lấy key sau",
+    Content = "This is just a beta version, more games will be added in the future.",
     Image = "rbxassetid://4483345998",
     Time = 10
 })
@@ -29,7 +29,7 @@ Tab:AddDropdown({
 })
 
 local Tab = Window:MakeTab({
-    Name = "Đang Thử Nghiệm",
+    Name = "Coming soon...",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = true
 })
@@ -40,5 +40,5 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddParagraph("Lưu Ý","Đây chỉ là bản thử nghiệm còn sẽ được cập nhật và UI này được sử dụng free bởi Orion Library. Discord: unineyu")
+Tab:AddParagraph("If you anoying get key, buy this paid ", "Discord: unineyu")
 OrionLib:Init()
