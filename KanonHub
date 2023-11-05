@@ -1,18 +1,3 @@
-local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
-KeySystemUI.New({
-    ApplicationName = "KanonHub", -- Your Key System Application Name
-    Name = "KanonHub 🔒", -- Your Script name
-    Info = "🔑 Get Key For KanonHub", -- Info text in the GUI, keep empty for default text.
-    DiscordInvite = "" -- Optional.
-})
-repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
-if KeySystemUI.Finished() and KeySystemUI.Closed == false then
-    print("Key verified, can load script")
-    -- your script
-else
-    print("Player closed the GUI.")
-end
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/OrionLib')))()
 local Window = OrionLib:MakeWindow({Name = "Kanon Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
