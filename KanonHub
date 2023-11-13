@@ -50,6 +50,20 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+    Name = "Other",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Invisible Player",
+    Callback = function()
+              print("button pressed")
+            loadstring(game:GetHttp("https://raw.githubusercontent.com/NeyuDev/feature-script/main/invisible"))()
+      end    
+})
+
+local Tab = Window:MakeTab({
     Name = "Coming soon...",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = true
