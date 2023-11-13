@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/OrionLib')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/KanonLib')))()
 local Window = OrionLib:MakeWindow({Name = "Kanon Hub (Free)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
     Name = "BladeBall",
