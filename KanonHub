@@ -16,15 +16,26 @@ Tab:AddToggle({
     Default = false,
     Callback = function(Value)
               print(Value)
+OrionLib:MakeNotification({
+	Name = "Kanon Hub (Free)",
+	Content = "Activated",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
             loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-op-autoparry-with-visualizer-8652"))()
       end    
 })
 Tab:AddToggle({
 	Name = "Auto Parry v2",
-	Default = false,
 	Callback = function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))() 
 		print(Value)
+OrionLib:MakeNotification({
+	Name = "Kanon Hub (Free)",
+	Content = "Activated",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))()
 	end    
 })
 Tab:AddDropdown({
