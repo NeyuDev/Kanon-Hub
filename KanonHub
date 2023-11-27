@@ -11,21 +11,22 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://4483345998",
     Time = 10
 })
-Tab:AddButton({
-    Name = "Auto Parry",
-    Callback = function()
-              print("button pressed")
+Tab:AddToggle({
+    Name = "Auto Parry v1",
+    Default = false,
+    Callback = function(Value)
+              print(Value)
             loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-op-autoparry-with-visualizer-8652"))()
       end    
 })
-Tab:AddButton({
-    Name = "Inf Jump",
-    Callback = function()
-              print("button pressed")
-            loadstring(game:GetHttp("https://raw.githubusercontent.com/NeyuDev/feature-script/main/infjump.lua"))()
-      end    
+Tab:AddToggle({
+	Name = "Auto Parry v2",
+	Default = false,
+	Callback = function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MB*PC.lua"))() 
+		print(Value)
+	end    
 })
-
 Tab:AddDropdown({
     Name = "Social",
     Default = "1",
