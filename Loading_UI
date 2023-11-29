@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 local list = {
 	--Doors
-	[6516141723] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua'))()",
+	[6516141723] ="loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua', true))()",
         --BladeBall
-	[13772394625] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bladeball.lua'))()",
+	[13772394625] ="loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bladeball.lua', true))()",
 }
