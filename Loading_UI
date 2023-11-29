@@ -10,6 +10,7 @@ Tab:AddButton({
 	Callback = function()
       		print("button pressed")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bladeball.lua'))()
+        OrionLib:Destroy()
   	end    
 })
 Tab:AddButton({
@@ -17,6 +18,7 @@ Tab:AddButton({
 	Callback = function()
       		print("button pressed")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua'))()
+        OrionLib:Destroy()
   	end    
 })
 Tab:AddButton({
@@ -24,6 +26,7 @@ Tab:AddButton({
 	Callback = function()
       		print("button pressed")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bloxfruit.lua'))()
+        OrionLib:Destroy()
   	end    
 })
 Tab:AddButton({
