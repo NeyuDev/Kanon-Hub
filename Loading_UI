@@ -16,13 +16,14 @@ Tab:AddButton({
 	Name = "Doors",
 	Callback = function()
       		print("button pressed")
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua'))()
   	end    
 })
 Tab:AddButton({
 	Name = "BloxFruits",
 	Callback = function()
       		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bloxfruit.lua'))()
   	end    
 })
 Tab:AddButton({
