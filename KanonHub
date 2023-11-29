@@ -44,21 +44,6 @@ Tab:AddDropdown({
         print(Value)
     end    
 })
-
-local Tab = Window:MakeTab({
-    Name = "BloxFruit",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name = "Find Empty Server",
-    Callback = function()
-              print("button pressed")
-            loadstring(game:GetHttp("https://raw.githubusercontent.com/NeyuDev/feature-script/main/emptyserverfinder.lua.lua.txt"))()
-      end    
-})
-
 local Tab = Window:MakeTab({
     Name = "Other",
     Icon = "rbxassetid://4483345998",
