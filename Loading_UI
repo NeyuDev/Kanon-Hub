@@ -1,6 +1,34 @@
-local list = {
-	--Doors
-	[6516141723] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua'))()",
-        --BladeBall
-	[13772394625] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bladeball.lua'))()",
-}
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Kanon Hub Loading UI", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "BladeBall",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/bladeball.lua'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Doors",
+	Callback = function()
+      		print("button pressed")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NeyuDev/Kanon-Hub/main/doors.lua
+  	end    
+})
+Tab:AddButton({
+	Name = "BloxFruits",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+      		print("button pressed")
+        OrionLib:Destroy()
+  	end    
+})
